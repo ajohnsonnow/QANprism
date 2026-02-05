@@ -1,0 +1,480 @@
+[
+  {
+    "model": "core.organization",
+    "pk": 1,
+    "fields": {
+      "name": "Human Rights Campaign",
+      "description": "Largest LGBTQ+ civil rights organization",
+      "org_type": "nonprofit",
+      "latitude": 38.9097,
+      "longitude": -77.0379,
+      "address": "1640 Rhode Island Ave NW, Washington, DC 20036",
+      "phone": "(202) 628-4160",
+      "website": "https://www.hrc.org",
+      "hours": "",
+      "tags": [
+        "advocacy",
+        "civil rights",
+        "education"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 2,
+    "fields": {
+      "name": "GLAAD",
+      "description": "LGBTQ+ media advocacy organization",
+      "org_type": "nonprofit",
+      "latitude": 40.7472,
+      "longitude": -73.9936,
+      "address": "104 W 29th St, New York, NY 10001",
+      "phone": "(212) 629-3322",
+      "website": "https://www.glaad.org",
+      "hours": "",
+      "tags": [
+        "media",
+        "advocacy",
+        "education"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 3,
+    "fields": {
+      "name": "The Center NYC",
+      "description": "New York City's LGBTQ+ community center",
+      "org_type": "community",
+      "latitude": 40.7379,
+      "longitude": -74.0,
+      "address": "208 W 13th St, New York, NY 10011",
+      "phone": "(212) 620-7310",
+      "website": "https://gaycenter.org",
+      "hours": "",
+      "tags": [
+        "community center",
+        "support groups",
+        "health services"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 4,
+    "fields": {
+      "name": "Los Angeles LGBT Center",
+      "description": "World's largest LGBTQ+ organization",
+      "org_type": "community",
+      "latitude": 34.0981,
+      "longitude": -118.3282,
+      "address": "1625 N Schrader Blvd, Los Angeles, CA 90028",
+      "phone": "(323) 993-7400",
+      "website": "https://lalgbtcenter.org",
+      "hours": "",
+      "tags": [
+        "community center",
+        "healthcare",
+        "housing",
+        "youth services"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 5,
+    "fields": {
+      "name": "San Francisco LGBT Center",
+      "description": "Community hub for LGBTQ+ San Francisco",
+      "org_type": "community",
+      "latitude": 37.7705,
+      "longitude": -122.421,
+      "address": "1800 Market St, San Francisco, CA 94102",
+      "phone": "(415) 865-5555",
+      "website": "https://www.sfcenter.org",
+      "hours": "",
+      "tags": [
+        "community center",
+        "support",
+        "cultural events"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 6,
+    "fields": {
+      "name": "Chicago Center on Halsted",
+      "description": "Midwest's premier LGBTQ+ community center",
+      "org_type": "community",
+      "latitude": 41.9462,
+      "longitude": -87.6493,
+      "address": "3656 N Halsted St, Chicago, IL 60613",
+      "phone": "(773) 472-6469",
+      "website": "https://www.centeronhalsted.org",
+      "hours": "",
+      "tags": [
+        "community center",
+        "senior services",
+        "youth programs"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 7,
+    "fields": {
+      "name": "Montrose Center",
+      "description": "Houston's LGBTQ+ community center",
+      "org_type": "community",
+      "latitude": 29.7465,
+      "longitude": -95.3892,
+      "address": "401 Branard St, Houston, TX 77006",
+      "phone": "(713) 529-0037",
+      "website": "https://www.montrosecenter.org",
+      "hours": "",
+      "tags": [
+        "community center",
+        "counseling",
+        "support groups"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 8,
+    "fields": {
+      "name": "Trans Lifeline",
+      "description": "Peer support hotline run by and for trans people",
+      "org_type": "nonprofit",
+      "latitude": 36.9101,
+      "longitude": -121.757,
+      "address": "P.O. Box 1345, Watsonville, CA 95077",
+      "phone": "(877) 565-8860",
+      "website": "https://translifeline.org",
+      "hours": "",
+      "tags": [
+        "crisis support",
+        "transgender",
+        "hotline"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 9,
+    "fields": {
+      "name": "National Center for Transgender Equality",
+      "description": "Policy advocacy for transgender rights",
+      "org_type": "nonprofit",
+      "latitude": 38.9032,
+      "longitude": -77.034,
+      "address": "1032 15th St NW, Suite 199, Washington, DC 20005",
+      "phone": "(202) 642-4542",
+      "website": "https://transequality.org",
+      "hours": "",
+      "tags": [
+        "advocacy",
+        "policy",
+        "transgender",
+        "legal"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 10,
+    "fields": {
+      "name": "The Trevor Project",
+      "description": "Crisis intervention for LGBTQ+ youth",
+      "org_type": "nonprofit",
+      "latitude": 34.0484,
+      "longitude": -118.2596,
+      "address": "660 S Figueroa St, Suite 100, Los Angeles, CA 90017",
+      "phone": "(866) 488-7386",
+      "website": "https://www.thetrevorproject.org",
+      "hours": "",
+      "tags": [
+        "crisis support",
+        "youth",
+        "suicide prevention",
+        "hotline"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 11,
+    "fields": {
+      "name": "GLSEN",
+      "description": "Education network for LGBTQ+ inclusive schools",
+      "org_type": "education",
+      "latitude": 40.7095,
+      "longitude": -74.0071,
+      "address": "110 William St, 30th Floor, New York, NY 10038",
+      "phone": "(212) 727-0135",
+      "website": "https://www.glsen.org",
+      "hours": "",
+      "tags": [
+        "education",
+        "youth",
+        "schools",
+        "advocacy"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 12,
+    "fields": {
+      "name": "PFLAG National",
+      "description": "Nation's first and largest organization for LGBTQ+ people and families",
+      "org_type": "nonprofit",
+      "latitude": 38.9039,
+      "longitude": -77.0422,
+      "address": "1828 L St NW, Suite 660, Washington, DC 20036",
+      "phone": "(202) 467-8180",
+      "website": "https://pflag.org",
+      "hours": "",
+      "tags": [
+        "family support",
+        "advocacy",
+        "education"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 13,
+    "fields": {
+      "name": "PFLAG NYC",
+      "description": "New York City chapter supporting LGBTQ+ individuals and families",
+      "org_type": "nonprofit",
+      "latitude": 40.7379,
+      "longitude": -74.0,
+      "address": "208 W 13th St, New York, NY 10011",
+      "phone": "(212) 463-0629",
+      "website": "https://pflagnyc.org",
+      "hours": "",
+      "tags": [
+        "family support",
+        "support groups",
+        "education"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 14,
+    "fields": {
+      "name": "PFLAG Seattle",
+      "description": "Seattle chapter providing support for LGBTQ+ people and allies",
+      "org_type": "nonprofit",
+      "latitude": 47.6145,
+      "longitude": -122.3183,
+      "address": "1122 E Pike St #1345, Seattle, WA 98122",
+      "phone": "(206) 325-7724",
+      "website": "https://pflagseattle.org",
+      "hours": "",
+      "tags": [
+        "family support",
+        "support groups"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 15,
+    "fields": {
+      "name": "Stonewall UK",
+      "description": "Leading LGBTQ+ rights charity in Europe",
+      "org_type": "nonprofit",
+      "latitude": 51.5291,
+      "longitude": -0.1046,
+      "address": "192 St John St, London EC1V 4JY, UK",
+      "phone": "",
+      "website": "https://www.stonewall.org.uk",
+      "hours": "",
+      "tags": [
+        "advocacy",
+        "education",
+        "workplace equality"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 16,
+    "fields": {
+      "name": "Egale Canada",
+      "description": "Leading LGBTQ+ human rights organization in Canada",
+      "org_type": "nonprofit",
+      "latitude": 43.6629,
+      "longitude": -79.3776,
+      "address": "185 Carlton St, Toronto, ON M5A 2K7, Canada",
+      "phone": "(416) 964-7887",
+      "website": "https://egale.ca",
+      "hours": "",
+      "tags": [
+        "advocacy",
+        "human rights",
+        "education"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 17,
+    "fields": {
+      "name": "ACON",
+      "description": "Australia's leading LGBTQ+ health organization",
+      "org_type": "healthcare",
+      "latitude": -33.8818,
+      "longitude": 151.2093,
+      "address": "414 Elizabeth St, Surry Hills NSW 2010, Australia",
+      "phone": "+61 2 9206 2000",
+      "website": "https://www.acon.org.au",
+      "hours": "",
+      "tags": [
+        "healthcare",
+        "HIV support",
+        "mental health"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 18,
+    "fields": {
+      "name": "LSVD",
+      "description": "German civil rights organization for LGBTQ+ people",
+      "org_type": "nonprofit",
+      "latitude": 52.5277,
+      "longitude": 13.4027,
+      "address": "Almstadtstr. 7, 10119 Berlin, Germany",
+      "phone": "+49 30 78 95 47 60",
+      "website": "https://www.lsvd.de",
+      "hours": "",
+      "tags": [
+        "advocacy",
+        "civil rights",
+        "legal"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  },
+  {
+    "model": "core.organization",
+    "pk": 19,
+    "fields": {
+      "name": "SOS Homophobie",
+      "description": "French organization fighting LGBTQ+ discrimination",
+      "org_type": "nonprofit",
+      "latitude": 48.8658,
+      "longitude": 2.3563,
+      "address": "67 Rue de Turbigo, 75003 Paris, France",
+      "phone": "+33 1 48 06 42 41",
+      "website": "https://www.sos-homophobie.org",
+      "hours": "",
+      "tags": [
+        "advocacy",
+        "anti-discrimination",
+        "support"
+      ],
+      "is_safe_space": true,
+      "is_verified": true,
+      "is_active": true,
+      "created_at": "2026-02-04T16:37:55.172815",
+      "updated_at": "2026-02-04T16:37:55.172815"
+    }
+  }
+]

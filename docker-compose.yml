@@ -1,0 +1,90 @@
+# Project Prism - Docker Compose Configuration
+# 
+# MERGED & IMPROVED: Complete development environment with:
+# - PostgreSQL database
+# - Django API server
+# - Redis for caching (optional)
+
+version: '3.8'
+
+services:
+  # =============================================================================
+  # DATABASE
+  # =============================================================================
+  db:
+    image: postgres:15-alpine
+    container_name: prism-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: prism
+      POSTGRES_USER: prism
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-prism_dev_password}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U prism"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # =============================================================================
+  # DJANGO API
+  # =============================================================================
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: prism-api
+    restart: unless-stopped
+    environment:
+      DJANGO_DEBUG: ${DJANGO_DEBUG:-True}
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:-dev-secret-key-change-in-production}
+      DJANGO_ALLOWED_HOSTS: localhost,127.0.0.1,api
+      DB_ENGINE: django.db.backends.postgresql
+      DB_NAME: prism
+      DB_USER: prism
+      DB_PASSWORD: ${DB_PASSWORD:-prism_dev_password}
+      DB_HOST: db
+      DB_PORT: 5432
+  
+  # =============================================================================
+  # FRONTEND PWA
+  # =============================================================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: prism-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+
+  # =============================================================================
+  # REDIS (Optional - for caching and message queue)
+  # =============================================================================
+  redis:
+    image: redis:7-alpine
+    container_name: prism-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:

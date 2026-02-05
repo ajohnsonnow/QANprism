@@ -1,0 +1,272 @@
+/**
+ * Community Bridge Screen Styles
+ */
+
+.bridge-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.bridge-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bridge-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #6c63ff;
+  margin-bottom: 10px;
+}
+
+.bridge-header p {
+  font-size: 16px;
+  color: #666;
+}
+
+.bridge-loading {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-size: 18px;
+}
+
+/* Stats Grid */
+.bridge-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.stat {
+  background: linear-gradient(135deg, #6c63ff 0%, #8e85ff 100%);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+}
+
+.stat-number {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  display: block;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Filters */
+.bridge-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.bridge-filters button {
+  padding: 10px 20px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bridge-filters button:hover {
+  border-color: #6c63ff;
+  color: #6c63ff;
+}
+
+.bridge-filters button.active {
+  background: #6c63ff;
+  border-color: #6c63ff;
+  color: white;
+}
+
+/* Empty State */
+.bridge-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+}
+
+.bridge-empty p {
+  font-size: 18px;
+}
+
+/* Submissions List */
+.bridge-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.submission-card {
+  background: white;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.submission-card:hover {
+  border-color: #6c63ff;
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.15);
+}
+
+.submission-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.submission-type {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6c63ff;
+}
+
+.submission-status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-in_progress {
+  background: #cfe2ff;
+  color: #084298;
+}
+
+.status-completed {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.status-rejected {
+  background: #f8d7da;
+  color: #842029;
+}
+
+.submission-org h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.submission-org p,
+.submission-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+.submission-response {
+  background: #f8f9fa;
+  border-left: 4px solid #6c63ff;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+.submission-response strong {
+  display: block;
+  color: #6c63ff;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.submission-response p {
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.submission-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+  font-size: 13px;
+  color: #999;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.submission-date,
+.submission-updated {
+  display: inline-block;
+}
+
+/* Footer */
+.bridge-footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.bridge-footer p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.bridge-footer a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.bridge-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bridge-header h1 {
+    font-size: 24px;
+  }
+
+  .bridge-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-number {
+    font-size: 28px;
+  }
+
+  .submission-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .submission-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
