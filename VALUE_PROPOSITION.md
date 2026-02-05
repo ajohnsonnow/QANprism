@@ -8,10 +8,10 @@
 
 | Development Approach | Estimated Hours | Rate | **Total Cost** |
 |---------------------|-----------------|------|----------------|
-| **This Project (AI-Assisted)** | 5 hours | $420/hour | **$2,100** |
+| **This Project (AI-Assisted)** | 7 hours | $420/hour | **$2,940** |
 | **Professional Development Agency** | 400-500 hours | $200-250/hour (blended) | **$80,000 - $125,000** |
 
-### **Value Delivered: 16,215 lines of production code in 5 hours**
+### **Value Delivered: 16,215 lines of production code in 7 hours**
 
 ---
 
@@ -139,20 +139,21 @@ TOTAL:                       510 hours         = $109,250
 ### This Project's Actual Cost (AI-Assisted Development)
 ```
 Development Sessions:
+  • Preplanning & Design:  2.0 hours (requirements, architecture)
   • Jan 23, 2026:  1.0 hours (initial scaffolding)
   • Jan 24, 2026:  2.5 hours (API, screens, encryption)
   • Feb 4, 2026:   1.5 hours (PWA, admin, features)
 ─────────────────────────────────────────────────
-TOTAL:                        5 hours × $420 = $2,100
+TOTAL:                        7 hours × $420 = $2,940
 ```
 
-### **SAVINGS: $107,150 (98% cost reduction)**
+### **SAVINGS: $106,310 (97% cost reduction)**
 
 ### Productivity Metrics
 - **Lines of Code:** 16,215
 - **Files Created:** 134
-- **Effective Rate:** 3,243 lines/hour
-- **Cost per Line:** $0.13
+- **Effective Rate:** 2,316 lines/hour
+- **Cost per Line:** $0.18
 
 ---
 
@@ -216,19 +217,19 @@ TOTAL:                        5 hours × $420 = $2,100
 ### Scenario 1: Bootstrapped Community Project
 **Budget:** $5,000 total funding
 - **With Professional Agency:** Not feasible (needs $114,250)
-- **With AI-Assisted Development:** $2,100 = **42% of budget**
-- **Remaining:** $2,900 for hosting, domain, marketing
+- **With AI-Assisted Development:** $2,940 = **59% of budget**
+- **Remaining:** $2,060 for hosting, domain, marketing
 
 ### Scenario 2: Small Grant Initiative
 **Budget:** $25,000 technology allocation
 - **With Professional Agency:** $114,250 = **457% over budget** (not possible)
-- **With AI-Assisted Development:** $2,100 = **8% of budget**
-- **Remaining:** $22,900 for expansion, outreach, maintenance, operations
+- **With AI-Assisted Development:** $2,940 = **12% of budget**
+- **Remaining:** $22,060 for expansion, outreach, maintenance, operations
 
 ### Scenario 3: Community Crowdfund
 **Budget:** $10,000 raised via crowdfunding
 - **With Professional Agency:** Only covers 9% of development
-- **With AI-Assisted Development:** Full platform + $7,900 for ongoing operations
+- **With AI-Assisted Development:** Full platform + $7,060 for ongoing operations
 
 ---
 
@@ -274,16 +275,16 @@ TOTAL:                        5 hours × $420 = $2,100
 
 **Project Prism** demonstrates the transformative power of AI-assisted development:
 
-- ✅ **98% cost savings** vs. professional agency ($2,100 vs $114,250)
-- ✅ **107x more efficient** than traditional development (5 hours vs 535 hours)
+- ✅ **97% cost savings** vs. professional agency ($2,940 vs $114,250)
+- ✅ **76x more efficient** than traditional development (7 hours vs 535 hours)
 - ✅ **16,215 lines** of production-ready code
-- ✅ **3,243 lines/hour** effective development rate
-- ✅ **$0.13 per line** of code
+- ✅ **2,316 lines/hour** effective development rate
+- ✅ **$0.18 per line** of code
 - ✅ **Mission-driven** development approach
 - ✅ **Open source** with MIT license
 
 ### Bottom Line
-What agencies typically quote at **$114,250** and **4-5 months** was delivered for **$2,100** in **5 hours** through:
+What agencies typically quote at **$114,250** and **4-5 months** was delivered for **$2,940** in **7 hours** through:
 
 - **AI-Assisted Development** (GitHub Copilot + expert direction)
 - **Direct Implementation** (no project management layers)
