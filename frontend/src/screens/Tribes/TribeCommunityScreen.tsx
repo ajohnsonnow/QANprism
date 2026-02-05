@@ -6,7 +6,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { apiClient } from '../../api/client';
-import { storageService } from '../../utils/StorageService';
 import './TribeCommunityScreen.css';
 
 interface Post {
@@ -109,15 +108,23 @@ export const TribeCommunityScreen: React.FC = () => {
       setPosting(false);
     }
   };
-if (tribeId) {
-        await apiClienasync (postId: string, reactionType: 'heart' | 'support' | 'celebrate') => {
+
+  const handleReaction = async (postId: string, reactionType: 'heart' | 'support' | 'celebrate') => {
     try {
       await apiClient.reactToPost(Number(postId), reactionType);
       // Reload to get updated counts
       await loadPosts();
     } catch (error) {
       console.error('[TribeCommunity] Failed to react:', error);
-    }t hours = Math.floor(diff / 3600000);
+    }
+  };
+
+  const formatTimeAgo = (dateString: string): string => {
+    const date = new Date(dateString);
+    const now = new Date();
+    const diff = now.getTime() - date.getTime();
+    const minutes = Math.floor(diff / 60000);
+    const hours = Math.floor(diff / 3600000);
     const days = Math.floor(diff / 86400000);
 
     if (minutes < 60) return `${minutes}m ago`;
@@ -215,19 +222,19 @@ if (tribeId) {
                 <div className="post-actions">
                   <button
                     className="reaction-button"
-                    onClick={() => handleReact(post.id, 'heart')}
+                    onClick={() => handleReaction(post.id, 'heart')}
                   >
                     ❤️ {post.reactions.heart}
                   </button>
                   <button
                     className="reaction-button"
-                    onClick={() => handleReact(post.id, 'support')}
+                    onClick={() => handleReaction(post.id, 'support')}
                   >
                     🤗 {post.reactions.support}
                   </button>
                   <button
                     className="reaction-button"
-                    onClick={() => handleReact(post.id, 'celebrate')}
+                    onClick={() => handleReaction(post.id, 'celebrate')}
                   >
                     🎉 {post.reactions.celebrate}
                   </button>
