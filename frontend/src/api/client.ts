@@ -16,9 +16,7 @@ import {
 // CONFIGURATION
 // =============================================================================
 
-const API_BASE_URL = import.meta.env.MODE === 'production'
-  ? 'https://api.prism.network/api'
-  : 'http://localhost:8000/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
 const API_TIMEOUT = 30000;
 
